@@ -6,7 +6,7 @@ Instruction from https://github.com/marcinkrzeminski/gulp-starter-kit.git :
 
 ### 1. Clone repo
 ```
-git clone // link-to-repo
+git clone https://github.com/wkra/base-boilerplate-gulp.git
 ```
 
 ### 2. Go inside cloned repo
