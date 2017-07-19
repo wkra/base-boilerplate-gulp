@@ -29,7 +29,8 @@ var config = {
   cssoutname: 'style.css',
   jsoutname: 'script.js',
   cssreplaceout: 'css/style.css',
-  jsreplaceout: 'js/script.js'
+  jsreplaceout: 'js/script.js',
+  sourceFiles: ['src/apple-touch-icon.png', 'src/favicon.ico']
 };
 
 gulp.task('reload', function() {
@@ -92,12 +93,17 @@ gulp.task('html', function() {
     .pipe(gulp.dest(config.dist))
 });
 
+gulp.task('copy', function(){
+  return gulp.src(config.sourceFiles)
+    .pipe(gulp.dest(config.dist))
+});
+
 gulp.task('clean', function() {
   return del([config.dist]);
 });
 
 gulp.task('build', function() {
-  sequence('clean', ['html', 'js', 'css', 'img']);
+  sequence('clean', ['html', 'js', 'css', 'img', 'copy']);
 });
 
 gulp.task('default', ['serve']);
