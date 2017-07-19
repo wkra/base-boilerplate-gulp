@@ -1,12 +1,12 @@
-### gulp-starter-kit from https://github.com/marcinkrzeminski/gulp-starter-kit.git
+### gulp-starter-kit: https://github.com/marcinkrzeminski/gulp-starter-kit.git
 
-### boilerplate from https://html5boilerplate.com/
+### boilerplate: https://html5boilerplate.com/
 
-# Usage
+Instruction from https://github.com/marcinkrzeminski/gulp-starter-kit.git :
 
 ### 1. Clone repo
 ```
-git clone https://github.com/marcinkrzeminski/gulp-starter-kit.git
+git clone // link-to-repo
 ```
 
 ### 2. Go inside cloned repo
